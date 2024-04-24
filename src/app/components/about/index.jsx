@@ -18,7 +18,7 @@ const AboutDetails = () => {
                     <p className='font-light'>
                         In the bustling kitchen of Crunchy Cheddar Studio, my journey in web development unfolds like a delectable recipe, 
                         powered by an array of sharp tools and languages. 
-                        With JavaScript as the melting core of my enchantments, I deftly wield frameworks like React.js and Next.js, 
+                        With JavaScript as the melting core of my cooking, I deftly wield frameworks like React.js and Next.js, 
                         slicing through code with precision to craft seamless dishes (websites) that whisk users away to digital realms.
                         Harnessing the ancient arts of the Jamstack, I imbue my creations with speed, security, 
                         and dynamism, ensuring each experience is as satisfying as a bite of aged cheddar. But my mastery extends beyond the web; 
@@ -35,6 +35,18 @@ const AboutDetails = () => {
                     <p className='font-semibold w-full text-left text-5xl'>
                         3+ <sub className='font-semibold text-base'>years of experience</sub>
                     </p>
+                </ItemLayout>
+                <ItemLayout className={"col-span-4 !p-0"}>
+                    <img className='w-full h-auto' src="https://github-readme-stats.vercel.app/api/top-langs?username=crunchycheddarstudio&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false" alt="crunchycheddarstudio" loading='lazy' />
+                </ItemLayout>
+                <ItemLayout className={"col-span-8 p-0"}>
+                    <img className='w-full h-auto' src="https://github-readme-stats.vercel.app/api?username=crunchycheddarstudio&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false" alt="crunchycheddarstudio" loading='lazy' />
+                </ItemLayout>
+                <ItemLayout className={"col-span-full"}>
+                    <img className='w-full h-auto' src="https://skillicons.dev/icons?i=js,astro,css,cs,cmake,discord,discordjs,figma,firebase,git,github,heroku,materialui,mysql,netlify,nextjs,nodejs,notion,npm,powershell,react,stackoverflow,solidity,tailwind,threejs,ts,unity,vercel,vite,vscode" alt="crunchycheddarstudio" loading='lazy' />
+                </ItemLayout>
+                <ItemLayout className={"col-span-6 !p-0"}>
+                <img className='w-full h-auto' src="http://github-readme-streak-stats.herokuapp.com?user=crunchycheddarstudio&theme=dark&hide_border=true&type=png&background=EB545400&ring=FEFE5B&currStreakLabel=FEFE5B" alt="CrunchyCheddarStudio" loading='lazy' />
                 </ItemLayout>
             </div>
         </section>
