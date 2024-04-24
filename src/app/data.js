@@ -23,3 +23,26 @@ export const BtnList = [
         newTab: true,
     },
 ];
+export const projectsData = [
+    {
+        id: 1,
+        name: "LotZed",
+        description: "Crypto Website",
+        date: "2022-10-01",
+        demoLink: "https://lotzed-website-arw9.vercel.app/",
+      },
+    {
+      id: 2,
+      name: "Queen Rubber",
+      description: "Crypto Website",
+      date: "2023-02-06",
+      demoLink: "https://queenrubber-dapp.vercel.app/",
+    },
+    {
+        id: 2,
+        name: "Slap A Jeet",
+        description: "Crypto Website",
+        date: "2024-03-01",
+        demoLink: "https://slapajeet.com",
+      },
+  ];
