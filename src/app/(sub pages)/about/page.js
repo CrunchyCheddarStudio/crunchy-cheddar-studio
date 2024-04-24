@@ -3,6 +3,7 @@ import bg from "../../../../public/background/about-background.png"
 import Image from 'next/image'
 import RenderModel from '../../components/RenderModel'
 import CheeseMoon from '../../models/CheeseMoon'
+import AboutDetails from '../../components/about'
 
 export default function page() {
   return (
@@ -20,6 +21,7 @@ export default function page() {
         </div>
       </div>
 
+      <AboutDetails />
 
     </>
   )
