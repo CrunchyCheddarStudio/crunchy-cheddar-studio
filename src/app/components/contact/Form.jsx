@@ -16,7 +16,7 @@ export default function App() {
                 {
                     publicKey: process.env.NEXT_PUBLIC_KEY,
                     limitRate: {
-                        throttle: 100000, // cannot send more then 1 email per x seconds
+                        throttle: 10000, // cannot send more then 1 email per x seconds
                     }
                 })
             .then(
@@ -48,7 +48,7 @@ export default function App() {
             <input
                 type="text"
                 placeholder="name"
-                {...register("Name", {
+                {...register("name", {
                     required: 'This field is required!',
                     minLength: {
                         value: 3,
@@ -71,7 +71,18 @@ export default function App() {
             {
                 errors.email && <span className='inline-block self-start self-accent'>{errors.email.message}</span>
             }
-            <textarea placeholder='message' {...register("message", { required: 'This field is required!' })}
+            <textarea
+                placeholder='message'
+                {...register("message", {
+                    required: 'This field is required!', maxLenght:
+                    {
+                        value: 500,
+                        message: 'Message should be less than 500 characters'
+                    }, minLength: {
+                        value: 50,
+                        message: 'Message should be more than 50 characters'
+                    }
+                })}
                 className='w-full p-2 rounded-md shadow-lg text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 custom-bg'
             />
 
