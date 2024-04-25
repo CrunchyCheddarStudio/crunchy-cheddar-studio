@@ -1,6 +1,7 @@
 import React from 'react'
 import bg from "../../../../public/background/contact-background.png"
 import Image from 'next/image'
+import Form from '../../components/contact/Form'
 
 export default function Contact() {
   return (
@@ -18,6 +19,7 @@ export default function Contact() {
           Drop me a line below and let's make magic happen together.
           </p>
         </div>
+        <Form />
       </article>
     </>
   )

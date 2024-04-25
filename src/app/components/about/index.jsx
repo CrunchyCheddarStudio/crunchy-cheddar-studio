@@ -49,7 +49,7 @@ const AboutDetails = () => {
                 <img className='w-full h-auto' src="http://github-readme-streak-stats.herokuapp.com?user=crunchycheddarstudio&theme=dark&hide_border=true&type=png&background=EB545400&ring=FEFE5B&currStreakLabel=FEFE5B" alt="CrunchyCheddarStudio" loading='lazy' />
                 </ItemLayout>
                 <ItemLayout className={"col-span-6 !p-0"}>
-                    <img className='w-full h-auto' src="https://github-readme-stats.vercel.app/api/pin/?username=crunchycheddarstudio&repo=crunchy-cheddar-studio&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false" alt="crunchycheddarstudio" loading='lazy' />
+                    <img className='w-full h-auto' src="https://github-readme-stats.vercel.app/api/pin/?username=crunchycheddarstudio&repo=contractV2&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false" alt="crunchycheddarstudio" loading='lazy' />
                 </ItemLayout>
             </div>
         </section>

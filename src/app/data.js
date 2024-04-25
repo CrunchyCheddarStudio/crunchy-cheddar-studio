@@ -26,20 +26,34 @@ export const BtnList = [
 export const projectsData = [
     {
         id: 1,
+        name: "Puli Astro",
+        description: "Arcade-style, play with epic ships for casual fun",
+        date: "2022-05-08",
+        demoLink: "https://play.google.com/store/apps/details?id=com.Puli.PuliAstro",
+      },
+    {
+        id: 2,
         name: "LotZed",
         description: "Crypto project website",
         date: "2022-10-01",
         demoLink: "https://lotzed-website-arw9.vercel.app/",
       },
     {
-      id: 2,
+      id: 3,
       name: "Queen Rubber",
       description: "Crypto project website",
       date: "2023-02-06",
       demoLink: "https://queenrubber-dapp.vercel.app/",
     },
     {
-        id: 3,
+        id: 4,
+        name: "Discover Fun",
+        description: "Fun educational game for children",
+        date: "2023-08-31",
+        demoLink: "https://play.google.com/store/apps/details?id=com.vqempire.discoverfun",
+      },
+    {
+        id: 5,
         name: "Slap A Jeet",
         description: "Crypto project website",
         date: "2024-03-01",
