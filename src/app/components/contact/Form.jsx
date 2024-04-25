@@ -24,10 +24,14 @@ export default function App() {
                 })
             .then(
                 () => {
-                    toast.success("I have received your message, I will get back to you soon.")
+                    toast.success("I have received your message, I will get back to you soon.", {
+                        id: toastId
+                    })
                 },
                 (error) => {
-                    toast.error("Oops something went wrong sending your message, please try again.")
+                    toast.error("Oops something went wrong sending your message, please try again.", {
+                        id: toastId
+                    })
                 },
             );
     };
