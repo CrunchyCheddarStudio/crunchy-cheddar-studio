@@ -2,12 +2,15 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import emailjs from "@emailjs/browser";
+import { Toaster, toast } from 'sonner';
 
 
 export default function App() {
     const { register, handleSubmit, formState: { errors } } = useForm();
 
     const sendEmail = (params) => {
+
+        const toastId = toast.loading("Sending your message, please wait...")
 
 
         emailjs
@@ -21,10 +24,10 @@ export default function App() {
                 })
             .then(
                 () => {
-                    console.log('SUCCESS!');
+                    toast.success("I have received your message, I will get back to you soon.")
                 },
                 (error) => {
-                    console.log('FAILED...', error.text);
+                    toast.error("Oops something went wrong sending your message, please try again.")
                 },
             );
     };
@@ -42,6 +45,8 @@ export default function App() {
     };
 
     return (
+        <>
+        <Toaster richColors={true} />
         <form onSubmit={handleSubmit(onSubmit)}
             className='max-w-md w-full flex flex-col items-center justify-center space-y-4'
         >
@@ -92,6 +97,8 @@ export default function App() {
             {
                 errors.name && <span className='inline-block self-start self-accent'>{errors.name.message}</span>
             }
-        </form>
+        </form>        
+        </>
+
     );
 }
